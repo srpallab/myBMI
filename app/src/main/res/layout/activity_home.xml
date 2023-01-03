@@ -29,7 +29,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/weight"
-                android:textColor="#78909C"
+                android:textColor="@color/tip_color"
                 android:textSize="24sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -46,8 +46,8 @@
                 android:ems="10"
                 android:hint="@string/_0"
                 android:inputType="number"
-                android:textColor="@color/text_hint"
-                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:textColorHint="@color/input_hint_color"
                 android:textSize="60sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -112,8 +112,8 @@
                 android:ems="10"
                 android:hint="@string/_0"
                 android:inputType="number"
-                android:textColor="@color/text_hint"
-                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:textColorHint="@color/input_hint_color"
                 android:textSize="60sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -157,7 +157,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/tvFinalScore"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -167,7 +167,7 @@
                 app:layout_constraintVertical_bias="0.165" />
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/tvResult"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -176,9 +176,12 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/tvRecommendedResults"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="@string/normal_range_is_18_5_24_9"
+                android:textColor="#29B6F6"
+                android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -188,7 +191,7 @@
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnCalculate"
         android:layout_width="340dp"
         android:layout_height="56dp"
         android:text="@string/calculate"

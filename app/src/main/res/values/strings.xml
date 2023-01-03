@@ -9,4 +9,5 @@
     <string name="height">Height</string>
     <string name="cm">CM</string>
     <string name="calculate">Calculate</string>
+    <string name="normal_range_is_18_5_24_9">Normal Range is 18.5 - 24.9</string>
 </resources>
